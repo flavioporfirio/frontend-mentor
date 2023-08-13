@@ -36,7 +36,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- ![Javascript](https://www.javascript.com)
+- [Javascript](https://www.javascript.com)
 
 ## Author
 
