@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/flavioporfirio)
+- Frontend Mentor - [@flavioporfirio](https://www.frontendmentor.io/profile/flavioporfirio)
 - Instagram - [flavioporfirio86](https://www.instagram.com/flavioporfirio86/)
