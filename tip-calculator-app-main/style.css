@@ -25,6 +25,8 @@ body {
 
   min-height: 100vh;
   background-color: var(--light-grayish-cyan);
+
+  overflow: hidden;
 }
 
 section {
