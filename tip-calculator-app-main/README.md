@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://flavioporfirio.github.io/frontend-mentor/tip-calculator-app-main/)
+- Solution URL: [Site link](https://flavioporfirio.github.io/frontend-mentor/tip-calculator-app-main/)
 
 ### Built with
 
