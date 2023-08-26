@@ -11,11 +11,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 
 ## Overview
-
-Desktop preview
 ![](./images/desktop-preview.png)
 
-Mobile preview
 ![](./images/mobile-preview.png)
 
 ### The challenge
