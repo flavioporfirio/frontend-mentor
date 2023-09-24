@@ -38,6 +38,10 @@ nav {
   height: 90px;
 }
 
+nav .sections--list li a{
+  color: var(--black);
+}
+
 .site--info {
   display: flex;
   align-items: center;
@@ -197,7 +201,7 @@ nav {
 
 .body-hr {
   margin-block: 20px 120px;
-  color: gray; /*Mudar depois*/
+  color: gray; 
 }
 
 section {
