@@ -1,0 +1,150 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 4rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 4rem;
+}
+
+.offer-info h1 {
+  line-height: 100%;
+  font-size: 6.2rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+
+.offer-info p {
+  font-size: 2rem;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.formSection .offer {
+  border-radius: 1.2rem;
+  padding: 2rem;
+
+  color: hsl(246, 25%, 77%);
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 2px 0px;
+}
+
+.offer strong {
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 5rem;
+  border-radius: 1.2rem;
+}
+
+form div.form-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form div.form-input .error-icon {
+  position: absolute;
+  top: 20%;
+  right: 2rem;
+}
+
+form div.form-input .error-icon .icon {
+  fill: var(--bgColor);
+}
+
+form input {
+  width: 100%;
+  background-color: #fff;
+  font-family: "Poppings", sans-serif;
+  border: 1px solid var(--primaryTextColor);
+  border-radius: 0.5rem;
+  color: var(--secondaryTextColor);
+  padding: 1.5rem 3rem;
+
+  font-weight: 700;
+}
+form input:focus {
+  outline: none;
+  background-color: #fff;
+  border: 1px solid var(--secondaryTextColor);
+}
+
+form input::placeholder {
+  font-family: "Poppings", sans-serif;
+  color: var(--primaryTextColor);
+}
+
+form button {
+  width: 100%;
+  padding: 2rem;
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+  border: none;
+  letter-spacing: 0.2rem;
+
+  background-color: var(--btnColor);
+  color: #fff;
+  box-shadow: rgb(54, 184, 126) 0px 5px 2px 0px;
+
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.02);
+  transition: transform 1s ease;
+}
+
+form p {
+  color: var(--primaryTextColor);
+}
+
+form p a,
+form p a:hover {
+  text-decoration: none;
+  color: var(--bgColor);
+  font-weight: bold;
+}
+
+form input.input-error {
+  color: var(--bgColor);
+  border: 2px solid var(--bgColor);
+}
+
+.error-message {
+  margin-block: -1rem;
+  text-align: right;
+  color: var(--bgColor);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 840px) {
+  main {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .offer-info h1 {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+}
