@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-script: "Inconsolata", sans-serif;
+  --font-gradient: "linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%))";
+}
+/* 
+- Neutral 0: hsl(0, 0%, 100%) // bg-white
+- Neutral 300: hsl(252, 6%, 83%) // slate-300
+- Neutral 500: hsl(245, 15%, 58%) // slate-500
+- Neutral 700: hsl(245, 19%, 35%) // slate-700
+- Neutral 900: hsl(248, 70%, 10%) // slate-900
+
+- Orange 500: hsl(7, 88%, 67%) //red-500 / orange-500
+- Orange 700: hsl(7, 71%, 60%) //red-600 / orange-600
+
+- Gradient (text): hsl(7, 86%, 67%) to hsl(0, 0%, 100%) */
