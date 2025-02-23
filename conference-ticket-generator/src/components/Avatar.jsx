@@ -3,6 +3,7 @@ import { useDropzone } from "react-dropzone";
 
 import iconInfo from "../assets/icon-info.svg";
 import iconUpload from "../assets/icon-upload.svg";
+import { CircleAlert } from "lucide-react";
 
 export default function Avatar() {
   const [preview, setPreview] = useState(undefined);
@@ -73,8 +74,8 @@ export default function Avatar() {
       <div className="flex items-center gap-2">
         <img src={iconInfo} alt="info icon" className="w-6 h-6" />
 
-        <p className="text-slate-300">
-          Upload your photo (JPG or PNG, max size: 500KB).
+        <p className={"text-slate-300"}>
+          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
         </p>
       </div>
     </div>

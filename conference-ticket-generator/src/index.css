@@ -4,7 +4,6 @@
 
 @theme {
   --font-script: "Inconsolata", sans-serif;
-  --font-gradient: "linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%))";
 }
 /* 
 - Neutral 0: hsl(0, 0%, 100%) // bg-white

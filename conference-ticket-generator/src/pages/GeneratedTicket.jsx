@@ -1,3 +1,3 @@
-export default function GeneratedTicket() {
-  return <div></div>;
+export default function GeneratedTicket({ children }) {
+  return <div>{children}</div>;
 }
