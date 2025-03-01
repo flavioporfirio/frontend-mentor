@@ -12,6 +12,7 @@ export default function App() {
   const [formData, setFormData] = useState({});
 
   function handleFormData(data) {
+    console.log(data);
     setFormData({ ...data });
   }
   function handleTicketGenerated() {
@@ -19,18 +20,47 @@ export default function App() {
   }
 
   return (
-    <div className="relative inset-0 min-h-screen w-full mx-auto flex flex-col items-center overflow-hidden font-script">
-      <img
-        src="./images/background-desktop.png"
-        alt="background"
-        className="absolute w-full h-full bg-cover bg-no-repeat bg-center z-[-1]"
-      />
-
-      <img
-        src="./images/pattern-squiggly-line-bottom-desktop.svg"
-        alt="decorative stroke"
-        className="absolute bottom-0 left-0 w-[600px] h-auto z-[-1]"
-      />
+    <div className="relative inset-0 min-h-screen w-full mx-auto overflow-hidden font-script grid justify-center">
+      <picture className="absolute w-full h-full bg-cover bg-no-repeat bg-center z-[-1]">
+        <source
+          srcSet="./images/background-mobile.png"
+          media="(max-width: 640px)"
+        />
+        <source
+          srcSet="./images/background-tablet.png"
+          media="(max-width: 1024px)"
+        />
+        <source
+          srcSet="./images/background-desktop.png"
+          media="(min-width: 1025px)"
+        />
+        <source />
+        <img
+          src="./images/background-desktop.png"
+          alt="background"
+          className="absolute w-full h-full bg-cover bg-no-repeat bg-center z-[-1]"
+        />
+      </picture>
+      <picture className="absolute bottom-0 left-0 w-[600px] h-auto z-[-1]">
+        <source
+          srcSet="./images/pattern-squiggly-line-top.svg"
+          media="(max-width: 640px)"
+        />
+        <source
+          srcSet="./images/pattern-squiggly-line-bottom-mobile-tablet.svg"
+          media="(max-width: 1024px)"
+        />
+        <source
+          srcSet="./images/pattern-squiggly-line-bottom-desktop.svg"
+          media="(min-width: 1025px)"
+        />
+        <source />
+        <img
+          src="./images/pattern-squiggly-line-bottom-desktop.svg"
+          alt="decorative stroke"
+          className="absolute bottom-0 left-0 w-[600px] h-auto z-[-1]"
+        />
+      </picture>
 
       <img
         src="./images/pattern-lines.svg"
@@ -51,7 +81,7 @@ export default function App() {
               <p>
                 Congrats,{" "}
                 <span className="bg-gradient-to-r from-orange-500 to-white text-transparent bg-clip-text">
-                  {formData.watchFormData.name}!
+                  {formData.name}!
                 </span>{" "}
                 Your ticket is ready.
               </p>
@@ -59,9 +89,7 @@ export default function App() {
             subtitle={
               <p>
                 We have emailed your ticket to{" "}
-                <span className="text-orange-500">
-                  {formData.watchFormData.email}
-                </span>{" "}
+                <span className="text-orange-500">{formData.email}</span>
                 and will send updates in the run up to the event.
               </p>
             }
@@ -75,7 +103,6 @@ export default function App() {
             title="Your Journey to Coding Conf 2025 Starts here!"
             subtitle="Secure your spot at next year&rsquo;s biggest coding conference."
           />
-          {/* <Avatar /> */}
           <Form
             onHandleTicketGenerated={handleTicketGenerated}
             onHandleFormData={handleFormData}
