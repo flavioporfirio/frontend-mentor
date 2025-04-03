@@ -5,7 +5,7 @@ export default function Ticket({ formData }) {
 
   console.log(formData);
   return (
-    <div className="bg-[url(./images/pattern-ticket.svg)] bg-center bg-no-repeat bg-contain w-full h-[300px] sm:h-[350px] object-contain mt-20 grid grid-cols-2 mb-8 p-8">
+    <div className="bg-[url(/images/pattern-ticket.svg)] bg-center bg-no-repeat bg-contain w-full h-[300px] sm:h-[350px] object-contain mt-20 grid grid-cols-2 mb-8 p-8">
       {/* <div className="flex flex-col justify-evenly sm:justify-between my-4 "> */}
       <div className="flex flex-col items-center justify-around sm:justify-between ">
         <div className="flex flex-col items-end gap-4">
