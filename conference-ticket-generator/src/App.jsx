@@ -12,7 +12,6 @@ export default function App() {
   const [formData, setFormData] = useState({});
 
   function handleFormData(data) {
-    console.log(data);
     setFormData({ ...data });
   }
   function handleTicketGenerated() {

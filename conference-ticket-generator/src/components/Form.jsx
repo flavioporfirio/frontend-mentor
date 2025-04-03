@@ -41,6 +41,7 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
+    noClick: false,
   });
 
   const isValidFile = (file) => {
@@ -76,10 +77,7 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
                 <img src={preview} alt="uploaded preview" />
               </p>
             ) : (
-              <label
-                htmlFor="image"
-                className="flex flex-col items-center gap-2"
-              >
+              <>
                 <img
                   src={iconUpload}
                   alt="upload icon"
@@ -90,7 +88,7 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
                 <span className="text-2xl text-slate-300 font-script">
                   Drag and drop or click to upload
                 </span>
-              </label>
+              </>
             )}
 
             <input

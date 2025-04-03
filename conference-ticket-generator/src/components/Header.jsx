@@ -6,7 +6,7 @@ export default function Header({ title, subtitle }) {
       <h1 className="font-bold text-slate-100 text-center text-5xl break-words">
         {title}
       </h1>
-      <h3 className="text-slate-300 text-[20px] text-center break-words">
+      <h3 className="text-slate-300 text-[20px] text-center break-words max-w-[80%]">
         {subtitle}
       </h3>
     </div>
