@@ -25,7 +25,7 @@ export default function Ticket({ formData }) {
           />
           <div>
             <p className="text-3xl sm:text-5xl text-slate-300 pb-2">
-              {formData.name}
+              {formData.name.split(" ")[0]}
             </p>
             <div className="flex gap-2 items-center">
               <img src={`${iconGithub}`} alt="" />
