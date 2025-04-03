@@ -21,19 +21,22 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
   const [selectedFile, setSelectedFile] = useState(undefined);
 
   const onDrop = useCallback((acceptedFiles) => {
-    if (isValidFile(acceptedFiles[0])) {
-      setSelectedFile(acceptedFiles[0]);
-      const file = new FileReader();
-
-      file.onload = function () {
-        setPreview(file.result);
-      };
-
-      file.readAsDataURL(acceptedFiles[0]);
-    } else {
-      setSelectedFile(acceptedFiles[0]);
-      // alert("Invalid file type or size");
+    if (!isValidFile(acceptedFiles[0])) {
+      alert("Invalid file type or size");
     }
+
+    setSelectedFile(acceptedFiles[0]);
+    const file = new FileReader();
+
+    file.onload = function () {
+      setPreview(file.result);
+    };
+
+    file.readAsDataURL(acceptedFiles[0]);
+
+    setTimeout(() => {
+      acceptedFiles.length = 0;
+    });
   }, []);
 
   const { getRootProps, getInputProps } = useDropzone({

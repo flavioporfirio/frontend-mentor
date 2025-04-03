@@ -89,8 +89,8 @@ export default function App() {
             subtitle={
               <p>
                 We have emailed your ticket to{" "}
-                <span className="text-orange-500">{formData.email}</span>
-                and will send updates in the run up to the event.
+                <span className="text-orange-500">{formData.email}</span> and
+                will send updates in the run up to the event.
               </p>
             }
           />
