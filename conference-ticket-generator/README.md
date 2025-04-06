@@ -1,102 +1,125 @@
-# Frontend Mentor - Conference ticket generator
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="./src/assets/interface.png" alt="Project logo"></a>
+</p>
 
-![Design preview for the Conference ticket generator coding challenge](./preview.jpg)
+<h1 align="center">Frontend Mentor - Conference ticket generator</h1>
 
-## Welcome! 👋
+<div align="center">
 
-Thanks for checking out this front-end coding challenge.
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() <br><br>
+[Português](#pt) / [English](#en)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+</div>
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+---
 
-## The challenge
+# Português <a name = "pt"></a>
 
-Your challenge is to build out this conference ticket generator and get it looking as close to the design as possible.
+## 📝 Tabela de conteúdos
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- [Sobre](#about_pt)
+- [Estrutura do projeto](#project_structure_pt)
+- [Deploy](#deployment_pt)
+- [Usando](#usage_pt)
+- [Tecnologias](#built_using_pt)
 
-Your users should be able to: 
+## 🧐 Sobre <a name = "about_pt"></a>
 
-- Complete the form with their details
-- Receive form validation messages if:
-  - Any field is missed
-  - The email address is not formatted correctly
-  - The avatar upload is too big or the wrong image format
-- Complete the form only using their keyboard
-- Have inputs, form field hints, and error messages announced on their screen reader
-- See the generated conference ticket when they successfully submit the form
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+Esse projeto é uma aplicação web que permite que usuários possam gerar um ticket para algum evento em questão.<br />
+Ele foi construído como uma desafio do site Frontend Mentor.<br />
+A aplicação foi construída utilizando ReactJS, Tailwind e outras tecnologias. <br />
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## 📁 Estrutura do projeto <a name = "project_structure_pt"></a>
 
-## Where to find everything
+A estrutura do projeto é a seguinte:
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+```
+├── public: pasta com arquivos públicos.
+│   ├── images: contem imagens utilizadas no projeto
+├── src: pasta com arquivos do projeto.
+│   ├── assets: pasta com arquivos de icons.
+│   ├── components: pasta com componentes da aplicação.
+│   ├── pages: paginas da aplicação
+│   ├── app.tsx: arquivo que contém a aplicação.
+│   ├── index.css: arquivo de estilização que contém a inicialização do Tailwind.
+│   ├── main.tsx: arquivo que contém a inicialização do React.
+├── index.html: arquivo que contém a estrutura da aplicação.
+```
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## 🚀 Deploy <a name = "deployment_pt"></a>
 
-If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+O deploy da aplicação foi realizado utilizando a plataforma Vercel. Que garante que a aplicação esteja sempre rodando na última versão do projeto, de forma estável e segura.<br>
+A aplicação pode ser acessada [aqui](https://flavio-conference-ticket-generator.vercel.app/).
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+## 🎈 Usando <a name="usage_pt"></a>
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+Para usar a aplicação, basta acessar a aplicação [aqui](https://flavio-conference-ticket-generator.vercel.app/).
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+O ticket pode ser gerado preenchendo o formulário com nome, email e usuário do github. Caso um campo não for preenchido não será possível gerar o ticket. A imagem deve ser JPG ou PNG e deverá ter no máximo 500KB para ser contabilizada.
 
-## Building your project
+## ⛏️ Tecnologias <a name = "built_using_pt"></a>
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- [ReactJS](https://reactjs.org/) - Biblioteca de JavaScript para construção de interfaces.
+- [Tailwind](https://tailwindcss.com/) - Framework de estilização.
+- [Vite](https://vitejs.dev/) - Build tool para aplicações web.
+- [uuid](https://radix-ui.com/) - Biblioteca para gerar UUIDs
+- [Lucide React](https://lucide.dev/) - Biblioteca de ícones.
+- [React-dropzone](https://react-dropzone.js.org/) - Biblioteca para implementar áreas de arrasta e solta
+- [React hook form](https://react-hook-form.com/) - Biblioteca para gerenciamento de formulários
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+---
 
-## Deploying your project
+# English <a name = "en"></a>
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+## 📝 Table of Contents <a name = "en"></a>
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- [About](#about_en)
+- [Project Structure](#project_structure_en)
+- [Deployment](#deployment_en)
+- [Usage](#usage_en)
+- [Technologies](#built_using_en)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## 🧐 About <a name = "about_en"></a>
 
-## Create a custom `README.md`
+This project is a web application that allows users to generate a ticket to an event. <br />
+It was built as a challenge fron the Frontend Mentor website. <br />
+The application was built using ReactJS, Tailwind and other technologies. <br />
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## 📁 Project Structure <a name = "project_structure_en"></a>
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+The project structure is as follows:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```
+├── public: folder with public files.
+│   ├── images: contains images used in the project
+├── src: folder with project files.
+│   ├── assets: folder with icon files.
+│   ├── components: folder with application components.
+│   ├── pages: pages of the application
+│   ├── app.tsx: file that contains the application.
+│   ├── index.css: styling file that contains Tailwind initialization.
+│   ├── main.tsx: file that contains the React initialization.
+├── index.html: file that contains the application structure.
+```
 
-## Submitting your solution
+## 🚀 Deployment <a name = "deployment_en"></a>
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+The application was deployed using the Vercel platform. This ensures that the application is always running the latest version of the project, in a stable and secure manner.<br>
+The application can be accessed [here](https://flavio-conference-ticket-generator.vercel.app/).
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## 🎈 Usage <a name="usage_en"></a>
 
-## Sharing your solution
+To use the application, simply access the application [here](https://flavio-conference-ticket-generator.vercel.app/). Or run the application locally, following the instructions above.
 
-There are multiple places you can share your solution:
+Tickets can be generated filling out the form with your name, email and github username. If a field isn't filled in, it won't be possible to generate a ticket. The image must be JPG or PNG and must be a maximum of 500KB to be counted.
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## ⛏️ Technologies <a name = "built_using_en"></a>
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- [ReactJS](https://reactjs.org/) - JavaScript library for building interfaces.
+- [Tailwind](https://tailwindcss.com/) - Styling framework.
+- [Vite](https://vitejs.dev/) - Build tool for web applications.
+- [uuid](https://radix-ui.com/) - Library to generate UUIDs
+- [Lucide React](https://lucide.dev/) - Icon library.
+- [React-dropzone](https://react-dropzone.js.org/) - Library to implement drag and drop areas.
+- [React hook form](https://react-hook-form.com/) - Library to manage forms.

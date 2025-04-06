@@ -22,7 +22,7 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
 
   const onDrop = useCallback((acceptedFiles) => {
     if (!isValidFile(acceptedFiles[0])) {
-      alert("Invalid file type or size");
+      return alert("Invalid file type or size");
     }
 
     setSelectedFile(acceptedFiles[0]);
@@ -39,7 +39,7 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
     });
   }, []);
 
-  const { getRootProps, getInputProps } = useDropzone({
+  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
     onDrop,
     noClick: false,
   });
@@ -49,6 +49,8 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
   };
 
   const onSubmit = function () {
+    if (!selectedFile) return;
+
     onHandleFormData({
       ...watchFormData,
       selectedFile,
@@ -104,13 +106,13 @@ export default function Form({ onHandleTicketGenerated, onHandleFormData }) {
           <div className="flex items-center gap-2">
             <p
               className={`flex gap-2 text-base ${
-                selectedFile && !isValidFile(selectedFile)
+                acceptedFiles[0] && !isValidFile(acceptedFiles[0])
                   ? "text-orange-700"
                   : "text-slate-300"
               }`}
             >
               <CircleAlert />
-              {selectedFile && !isValidFile(selectedFile)
+              {acceptedFiles[0] && !isValidFile(acceptedFiles[0])
                 ? "File too large. Please upload a photo under 500KB."
                 : "Upload your photo (JPG or PNG, max size: 500KB)."}
             </p>
