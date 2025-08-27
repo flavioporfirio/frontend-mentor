@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 <p align="center">
   <a href="" rel="noopener">
  <img src="./src/assets/interface.png" alt="Project logo"></a>
 </p>
 
 <h1 align="center">Expert Notes</h1>
-=======
-<h1 align="center">Frontend Mentor projects</h1>
->>>>>>> 2fa455647b2b3a11bd1f0e478f043dfedcfd92ff
 
 <div align="center">
 

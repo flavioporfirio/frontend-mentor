@@ -11,16 +11,11 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 
 ## Overview
-<<<<<<< HEAD
 
 Desktop preview
 ![](./images/desktop-preview.png)
 
 Mobile preview
-=======
-![](./images/desktop-preview.png)
-
->>>>>>> main
 ![](./images/mobile-preview.png)
 
 ### The challenge
@@ -33,11 +28,7 @@ Users should be able to:
 
 ### Links
 
-<<<<<<< HEAD
 - Solution URL: [Add solution URL here](https://flavioporfirio.github.io/frontend-mentor/tip-calculator-app-main/)
-=======
-- Solution URL: [Site link](https://flavioporfirio.github.io/frontend-mentor/tip-calculator-app-main/)
->>>>>>> main
 
 ### Built with
 
