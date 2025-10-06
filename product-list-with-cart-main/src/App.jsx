@@ -30,6 +30,7 @@ export default function App() {
         order={order}
         addItemToOrder={addItemToOrder}
         updateAmountDesert={updateAmountDesert}
+        removeOrderItem={removeOrderItem}
       />
       <Cart order={order} removeOrderItem={removeOrderItem} />
     </div>

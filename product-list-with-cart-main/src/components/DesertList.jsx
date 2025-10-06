@@ -124,6 +124,7 @@ export default function DesertList({
   order,
   addItemToOrder,
   updateAmountDesert,
+  removeOrderItem,
 }) {
   return (
     <div>
@@ -135,6 +136,7 @@ export default function DesertList({
             data={data}
             onAddItemToOrder={addItemToOrder}
             updateAmountDesert={updateAmountDesert}
+            removeOrderItem={removeOrderItem}
             key={data.id}
           />
         ))}

@@ -7,9 +7,13 @@ export default function Desert({
   data,
   onAddItemToOrder,
   updateAmountDesert,
+  removeOrderItem,
 }) {
   const [selected, setSelected] = useState(false);
   const [amount, setAmount] = useState(1);
+
+  console.log(order);
+  order;
 
   useEffect(() => {
     const isInCart = order.find((item) => item.id === data.id);
@@ -17,7 +21,11 @@ export default function Desert({
       setAmount(1);
       setSelected(false);
     }
-  }, [order, data]);
+
+    if (isInCart && amount === 0) {
+      removeOrderItem(data.id);
+    }
+  }, [order, data, amount, removeOrderItem]);
 
   return (
     <div className="">
@@ -37,6 +45,7 @@ export default function Desert({
                   const newAmount = amount > 0 ? amount - 1 : amount;
 
                   setAmount(newAmount);
+
                   updateAmountDesert(data.id, newAmount);
                 }}
                 className="flex items-center justify-center w-6 h-6 border-2 rounded-full cursor-pointer border-white"
